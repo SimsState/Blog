@@ -8,11 +8,25 @@ include('includes/connexion.inc.php');
 include('includes/header.inc.php');
 include('includes/verif_util.inc.php');
 
+if(isset($_POST['search'])){	
+	$search=mysql_real_escape_string($_POST['search']);
+}
+else{
+	$search="";
+}
 
 // On va sélectionner tous les articles de la bdd pour les afficher en page d'accueil
+if($search==NULL){
+	
+	$res=mysql_query("SELECT * FROM articles") or die('Erreur SQL !'.$res.'<br>'.mysql_error());;
+	
+}// Sinon on effectue la recherche qui a été récupérée
+else {
+	
+	$sql='SELECT * FROM articles WHERE contenu LIKE "%'.$search.'%"';
+	$res=mysql_query($sql) or die('Erreur SQL !'.$res.'<br>'.mysql_error());;
 
-$res=mysql_query("SELECT * FROM articles");
-
+}
 while($data=mysql_fetch_array($res)){ 
 	// On récupère les articles un par un
 	

@@ -1,6 +1,11 @@
  
           </div>
           
+          <form action="index.php" method="post">
+			<input type="text" name="search"/>
+			<input type="submit" value="Rechercher"/>
+		  </form>
+          
           <nav class="span4">
             <h2>Menu</h2>
             
@@ -9,6 +14,11 @@
                 
                 <?php
                 include("includes/verif_util.inc.php");
+                if($connecte==false) { ?>
+                
+                <li><a href="inscription.php">Inscription</a></li>
+                
+                <?php }
                 if($connecte==true) { ?>
 					
                 <li><a href="article.php">Rédiger un article</a></li>
