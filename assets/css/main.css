@@ -29,3 +29,7 @@
 .spacer {
 	clear: both;
 }
+
+#ulmenu {
+	display: none;
+}

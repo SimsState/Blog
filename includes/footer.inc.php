@@ -2,14 +2,14 @@
           </div>
           
           <form action="index.php" method="post">
-			<input type="text" name="search"/>
+			<input type="text" name="search" placeholder="Recherche"/>
 			<input type="submit" value="Rechercher"/>
 		  </form>
           
           <nav class="span4">
             <h2>Menu</h2>
             
-            <ul>
+            <ul id="ulmenu">
                 <li><a href="index.php">Accueil</a></li>
                 
                 <?php
@@ -43,6 +43,17 @@
       </footer>
 
     </div>
+    
+    <script>
+		$(document).ready(function(){
+			$('.span4').mouseover(function(){
+				$('#ulmenu').slideDown(100);
+			});
+			$('.span4').mouseleave(function(){
+				$('#ulmenu').slideUp(100);
+			});
+		});
+    </script>
 
   </body>
 </html>
