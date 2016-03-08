@@ -7,6 +7,10 @@
     <meta name="description" content="Petit blog pour m'initier à PHP">
     <meta name="author" content="Jean-philippe Lannoy">
     <script src="assets/js/jquery-1.8.2.js"></script>
+    
+    <script src="assets/js/bjqs-1.3.min.js"></script>
+    <script src="assets/js/bjqs-1.3.js"></script>
+    <script src="assets/js/jquery.secret-source.min.js"></script>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -15,6 +19,8 @@
     
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/bjqs.css" rel="stylesheet">
+    <link href="assets/css/demo.css" rel="stylesheet">
   </head>
 
   <body>
