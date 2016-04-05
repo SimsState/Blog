@@ -62,6 +62,8 @@ while($data=mysql_fetch_array($res)){
 		echo '<a class="btn btn-primary" href="./supprimer_article.php?id='.$data['id'].'">Supprimer</a>';
 	}
 	
+	echo '<a style="float:right;">Voter</a>';
+	
 	echo '<hr>';
 	// Banniere de bas d'article pour démarquer les articles
 }

@@ -55,6 +55,7 @@
     </div>
     
     <script>
+		// menu
 		$(document).ready(function(){
 			$('.span4').mouseover(function(){
 				$('#ulmenu').slideDown(100);
@@ -64,6 +65,7 @@
 			});
 		});
 		
+		// newsletter
 		$("#nwsletterSub").click(function(){
 			var nws= $.ajax({
 				url : "newsletter.php",
