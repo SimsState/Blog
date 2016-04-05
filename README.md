@@ -53,3 +53,6 @@ Fonction permettant de s'inscrire dynamiquement à la newsletter, avec confirmat
 # SLIDER
 
 Fonction permettant d'afficher un diaporama des trois articles les plus récents avec JQuery, en haut de la page index.
+
+
+Optimisation: https://github.com/SimsState/optimisation
