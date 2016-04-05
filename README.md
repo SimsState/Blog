@@ -46,3 +46,10 @@ d'article en gardant les valeurs du titre et du contenu, afin de faciliter la mo
 Cette fonction permet d'afficher les articles recherchés grâce aux mots clés, en utilisant une barre de recherche en haut à droite du 
 blog. Si la recherche n'aboutit pas, elle ne renvoie aucun article.
 
+# NEWSLETTER
+
+Fonction permettant de s'inscrire dynamiquement à la newsletter, avec confirmation, qui vérifie si le mail est valide et s'il est inexistant dans la base de données.
+
+# SLIDER
+
+Fonction permettant d'afficher un diaporama des trois articles les plus récents avec JQuery, en haut de la page index.
